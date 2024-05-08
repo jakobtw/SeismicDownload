@@ -4,6 +4,7 @@ using SeisBase
 # Get the start and end time in UTC
 ts = "2023-11-24T08:12:04"
 te = "2023-11-24T08:18:04"
+# later want to use a location dependant function to get the start time and set an end time
 
 # Get the seisdata "S", downloading from FDSN, station UO.HAPY, from IRIS server
 S = get_data("FDSN","UO.HAPY.",src="IRIS", s=ts,t=te, detrend=false, rr=false, w= true, autoname=true)
